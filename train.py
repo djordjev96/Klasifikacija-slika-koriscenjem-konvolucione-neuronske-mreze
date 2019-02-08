@@ -8,14 +8,14 @@ from keras import backend as K
 # th oznacava da ce konvoluciono jezgro biti oblika (depth, input_depth, rows, cols)
 K.set_image_dim_ordering('th')
 
-img_width, img_height = 150, 150
+img_width, img_height = 128, 128
 
 # postavljamo parametre
-train_data_dir = 'data/train'
-validation_data_dir = 'data/validate'
-nb_train_samples = 100
-nb_validation_samples = 25
-nb_epoch = 1000
+train_data_dir = 'train/'
+validation_data_dir = 'validation/'
+nb_train_samples = 2500
+nb_validation_samples = 1000
+nb_epoch = 100
 
 
 if K.image_data_format() == 'channels_first':
